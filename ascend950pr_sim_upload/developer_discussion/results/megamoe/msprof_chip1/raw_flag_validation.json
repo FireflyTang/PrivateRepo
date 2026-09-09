@@ -1,9 +1,0 @@
-{
-  "raw_flags": 752,
-  "matched_flags": 752,
-  "matched_pairs": 376,
-  "waits_clipped_by_native_exporter": 98,
-  "detail_and_endpoints_match": true,
-  "frequency_mhz": 1650,
-  "scope": "All SET_FLAG/WAIT_FLAG on reported cores; ordinary instructions are not covered"
-}
