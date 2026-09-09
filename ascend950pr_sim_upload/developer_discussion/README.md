@@ -13,7 +13,7 @@
 ## 当前流程和验证边界
 
 - CANN 9.2.0-weekly.20260902.01，msopprof 26.2.0.dev202609020100；完整版本见 PROVENANCE.json。
-- Dispatch、MegaMoE 都通过双卡离线 case 执行；非平凡输出通过独立 golden 核对。原始输入、kernel、DB、instr.bin、报告与完整复现说明已在本地归档；大文件上传暂被 GitHub 规则校验超时阻断，云盘尚无完整包。
+- Dispatch、MegaMoE 都通过双卡离线 case 执行；非平凡输出通过独立 golden 核对。原始输入、kernel、DB、instr.bin、报告与完整复现说明已通过 [完整归档分片](../archive_parts/README.md) 上传；下载后执行 assemble.py 还原。
 - 保留的可选 Insight 展示链路：instr.bin → 还原模型文本 → 原生 `msprof op simulator --export`。脚本不生成或修改 JSON 的名称、颜色、时长和连线。
 - 原生报告同步记录已与 raw 对照，并用 Insight 的 Flag 处理函数/SQL 核验关联。尚未再次完整验收最新版 GUI；普通多阶段指令也不能声称全量无损。
 
@@ -36,4 +36,4 @@
 
 完整过程见 [NATIVE_REPORT.md](docs/NATIVE_REPORT.md)，其他运行问题见 [ISSUES.md](docs/ISSUES.md)。这些文件保留历史路径以定位证据；复现请用完整归档中的 scripts/prepare_case.py 建立新 case，不覆盖保存结果。
 
-无需一开始下载整包：先看可读版说明中的两个具体例子和版本信息；需要原始数据重现时，再提供完整归档。
+无需一开始下载整包：先看可读版说明中的两个具体例子和版本信息；需要原始数据重现时，下载同级 archive_parts 目录并执行 assemble.py。
