@@ -2,13 +2,19 @@
 
 一句话问题：**950PR 双卡用 `npusim record -c` 跑完后，官方推荐怎样直接导出带 SET/WAIT 连线的 MindStudio Insight 流水，需要启用什么参数或配套版本？**
 
+**关于“WAIT 只有 1 tick”和“重复 ID”两个问题，请先看 [可读版说明](docs/HELPER_TWO_ISSUES.md)**。文中有完整例子和开发者需要确认的问题，不用先读全部审计 JSON。
+
 我们优先希望使用原生工具；下面是已验证事实与尚待确认问题，并不预设仿真运行方式或 helper 必然有 bug。
+
+## 当前处理决定
+
+先按开发者建议使用原生 `npusim report -e ARCHIVE -n all`，用 Perfetto 查看。已导出 MegaMoE 两卡各 core0/core1，默认流程不修复 DB、不改流水展示。helper 的两个问题先交开发者确认，Insight 路线保留。导出结果见云盘同级 ../perfetto_megamoe/，可读版问题说明见下方链接。
 
 ## 当前流程和验证边界
 
 - CANN 9.2.0-weekly.20260902.01，msopprof 26.2.0.dev202609020100；完整版本见 PROVENANCE.json。
-- Dispatch、MegaMoE 都通过双卡离线 case 执行；非平凡输出通过独立 golden 核对。原始输入、kernel、DB、instr.bin、报告与完整复现说明在同级完整归档包中。
-- 当前展示链路：instr.bin → 还原模型文本 → 原生 `msprof op simulator --export`。脚本不生成或修改 JSON 的名称、颜色、时长和连线。
+- Dispatch、MegaMoE 都通过双卡离线 case 执行；非平凡输出通过独立 golden 核对。原始输入、kernel、DB、instr.bin、报告与完整复现说明已在本地归档；大文件上传暂被 GitHub 规则校验超时阻断，云盘尚无完整包。
+- 保留的可选 Insight 展示链路：instr.bin → 还原模型文本 → 原生 `msprof op simulator --export`。脚本不生成或修改 JSON 的名称、颜色、时长和连线。
 - 原生报告同步记录已与 raw 对照，并用 Insight 的 Flag 处理函数/SQL 核验关联。尚未再次完整验收最新版 GUI；普通多阶段指令也不能声称全量无损。
 
 ## 请优先回答
@@ -30,4 +36,4 @@
 
 完整过程见 [NATIVE_REPORT.md](docs/NATIVE_REPORT.md)，其他运行问题见 [ISSUES.md](docs/ISSUES.md)。这些文件保留历史路径以定位证据；复现请用完整归档中的 scripts/prepare_case.py 建立新 case，不覆盖保存结果。
 
-无需一开始下载整包：先看本页、helper_zero_duration/audit.json 和版本信息；需要重现时再下载同级完整归档。
+无需一开始下载整包：先看可读版说明中的两个具体例子和版本信息；需要原始数据重现时，再提供完整归档。
