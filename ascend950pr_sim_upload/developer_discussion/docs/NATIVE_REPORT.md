@@ -1,6 +1,10 @@
 # 原生报告与参数调查
 
-结论：应优先使用原生 msprof。此前主要沿着 npusim 的报告 JSON 做兼容修复，过早承担了展示层逻辑。现在已实际跑通“原始 instr.bin → 模型文本记录 → msprof 原生报告”，不再由自写脚本指定 JSON 名称、颜色、时长或连线。
+最新选择：默认采用开发者建议的 `npusim report -e ARCHIVE -n all`，用 Perfetto 看原生流水。下面的 msprof/Insight 路径保留为可选方案，helper 相关问题暂交开发者确认。
+
+helper 的两个现象已有更完整的 [独立说明](HELPER_TWO_ISSUES.md)。尤其需要区分：零时长补为 1 tick 的 SQL，与原始起点此前为何未被保留，并不是同一个已证实的处理步骤；WAIT 的 duration-excluded 标记也需按设计语义理解。
+
+Insight 场景的结论：应优先使用原生 msprof。此前主要沿着 npusim 的报告 JSON 做兼容修复，过早承担了展示层逻辑。现在已实际跑通“原始 instr.bin → 模型文本记录 → msprof 原生报告”，不再由自写脚本指定 JSON 名称、颜色、时长或连线。
 
 ## 已核实的参数
 
