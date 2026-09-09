@@ -1,0 +1,90 @@
+[
+  {
+    "trace": "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/megamoe/pipeline/msprof_chip0/simulator/trace.json",
+    "is_operator_header": true,
+    "flags_parsed": 752,
+    "flags_with_clickable_pair": 752,
+    "resolved_flow_pairs": 376,
+    "durations": {
+      "SET_FLAG": {
+        "count": 376,
+        "zero_ns": 169,
+        "positive_ns": 207,
+        "max_ns": 1
+      },
+      "WAIT_FLAG": {
+        "count": 376,
+        "zero_ns": 90,
+        "positive_ns": 286,
+        "max_ns": 8732
+      }
+    },
+    "complete_event_color_keys": 9
+  },
+  {
+    "trace": "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/megamoe/pipeline/msprof_chip1/simulator/trace.json",
+    "is_operator_header": true,
+    "flags_parsed": 752,
+    "flags_with_clickable_pair": 752,
+    "resolved_flow_pairs": 376,
+    "durations": {
+      "SET_FLAG": {
+        "count": 376,
+        "zero_ns": 155,
+        "positive_ns": 221,
+        "max_ns": 1
+      },
+      "WAIT_FLAG": {
+        "count": 376,
+        "zero_ns": 94,
+        "positive_ns": 282,
+        "max_ns": 8780
+      }
+    },
+    "complete_event_color_keys": 9
+  },
+  {
+    "trace": "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/dispatch/pipeline/msprof_chip0/simulator/trace.json",
+    "is_operator_header": true,
+    "flags_parsed": 240,
+    "flags_with_clickable_pair": 240,
+    "resolved_flow_pairs": 120,
+    "durations": {
+      "SET_FLAG": {
+        "count": 120,
+        "zero_ns": 53,
+        "positive_ns": 67,
+        "max_ns": 1
+      },
+      "WAIT_FLAG": {
+        "count": 120,
+        "zero_ns": 90,
+        "positive_ns": 30,
+        "max_ns": 2179
+      }
+    },
+    "complete_event_color_keys": 8
+  },
+  {
+    "trace": "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/dispatch/pipeline/msprof_chip1/simulator/trace.json",
+    "is_operator_header": true,
+    "flags_parsed": 240,
+    "flags_with_clickable_pair": 240,
+    "resolved_flow_pairs": 120,
+    "durations": {
+      "SET_FLAG": {
+        "count": 120,
+        "zero_ns": 46,
+        "positive_ns": 74,
+        "max_ns": 1
+      },
+      "WAIT_FLAG": {
+        "count": 120,
+        "zero_ns": 91,
+        "positive_ns": 29,
+        "max_ns": 2287
+      }
+    },
+    "complete_event_color_keys": 8
+  }
+]
