@@ -1,0 +1,90 @@
+{
+  "library_sha256": "954c36d053b00f3aeca21c1505db4821ac5b8094c2c3b5a9148da033dd7637b3",
+  "library": "/home/t00826093/Ascend/9.2.0-weekly.20260902.01/cann-9.2.0/x86_64-linux/simulator/bin/libcannsim_helper.so",
+  "cases": {
+    "megamoe": {
+      "chip0": {
+        "db_flags_name_count_min_ticks_max_ticks": [
+          [
+            "SET_FLAG",
+            376,
+            1,
+            1
+          ],
+          [
+            "WAIT_FLAG",
+            376,
+            1,
+            1
+          ]
+        ],
+        "db_other_zero_duration_records": 5992,
+        "raw_wait_count": 376,
+        "raw_wait_positive_ticks": 319,
+        "raw_wait_max_ticks": 14409
+      },
+      "chip1": {
+        "db_flags_name_count_min_ticks_max_ticks": [
+          [
+            "SET_FLAG",
+            376,
+            1,
+            1
+          ],
+          [
+            "WAIT_FLAG",
+            376,
+            1,
+            1
+          ]
+        ],
+        "db_other_zero_duration_records": 6038,
+        "raw_wait_count": 376,
+        "raw_wait_positive_ticks": 319,
+        "raw_wait_max_ticks": 14487
+      }
+    },
+    "dispatch": {
+      "chip0": {
+        "db_flags_name_count_min_ticks_max_ticks": [
+          [
+            "SET_FLAG",
+            2384,
+            1,
+            1
+          ],
+          [
+            "WAIT_FLAG",
+            2384,
+            1,
+            1
+          ]
+        ],
+        "db_other_zero_duration_records": 11473,
+        "raw_wait_count": 2384,
+        "raw_wait_positive_ticks": 651,
+        "raw_wait_max_ticks": 3596
+      },
+      "chip1": {
+        "db_flags_name_count_min_ticks_max_ticks": [
+          [
+            "SET_FLAG",
+            2384,
+            1,
+            1
+          ],
+          [
+            "WAIT_FLAG",
+            2384,
+            1,
+            1
+          ]
+        ],
+        "db_other_zero_duration_records": 11473,
+        "raw_wait_count": 2384,
+        "raw_wait_positive_ticks": 651,
+        "raw_wait_max_ticks": 3774
+      }
+    }
+  }
+}
