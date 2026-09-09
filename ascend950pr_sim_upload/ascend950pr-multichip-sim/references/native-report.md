@@ -1,4 +1,6 @@
-# 原生 npusim 报告与 Perfetto
+# 备用：原生 npusim 报告与 Perfetto
+
+仅在用户选择 Perfetto 或需要原生 npusim 报告作对照时使用；默认 Insight 路线见 insight.md。
 
 加载对应 CANN set_env.sh，查看本机 `npusim report --help`。基本命令：
 
