@@ -1,0 +1,14 @@
+        ExecInstrTickEnd = ExecInstrTickStart
+        AND (
+            ExecInstrName LIKE 'SET_INTRA_BLOCK%'
+            OR ExecInstrName LIKE 'WAIT_INTRA_BLOCK%'
+            OR ExecInstrName LIKE 'SET_FLAG%'
+            OR ExecInstrName LIKE 'WAIT_FLAG%'
+            OR ExecInstrName LIKE 'GET_BUF%'
+            OR ExecInstrName LIKE 'RLS_BUF%'
+            OR ExecInstrName LIKE 'SET_CROSS_CORE%'
+        )
+    
+SELECT COUNT(*) FROM ExecutedInstructions WHERE 
+UPDATE ExecutedInstructions SET ExecInstrTickStart = ExecInstrTickStart - 1 WHERE 
+normalized zero-duration sync instructions: %llu
