@@ -1,0 +1,290 @@
+
+███╗   ██╗██████╗ ██╗   ██╗    ███████╗██╗███╗   ███╗    
+████╗  ██║██╔══██╗██║   ██║    ██╔════╝██║████╗ ████║    
+██╔██╗ ██║██████╔╝██║   ██║    ███████╗██║██╔████╔██║    
+██║╚██╗██║██╔═══╝ ██║   ██║    ╚════██║██║██║╚██╔╝██║    
+██║ ╚████║██║     ╚██████╔╝    ███████║██║██║ ╚═╝ ██║    
+╚═╝  ╚═══╝╚═╝      ╚═════╝     ╚══════╝╚═╝╚═╝     ╚═╝    
+                                                        
+    Join the conversation and help shape the future.
+    └─ https://gitcode.com/org/cann/discussions/50
+
+Notice: The cannsim command has been renamed to npusim and will be deprecated soon.
+Please use npusim instead.
+
+
+===============================================================================
+    AscendC Kernel Simulation Tool  -  Start (2026-09-08 20:04:55 -0700)
+===============================================================================
+[1/3] Preflight                OK  case=megamoe_native_logging_case_20260908 topology=2p
+[2/3] Paths resolved           OK  target=npusim_20260908200455_case
+[3/3] Simulation
+[2026-09-09 03:04:55] [INFO] Symlink created: /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel/case -> /tmp/megamoe_native_logging_case_20260908
+[2026-09-09 03:04:55] [INFO] Runtime dirs ready: log, log/ub_log, run_log, log_ca under /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel
+[2026-09-09 03:04:55] [INFO] Ensured executable permission on /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel/sim
+[2026-09-09 03:04:55] [INFO] cannsim_helper enabled (ktest): /home/t00826093/Ascend/9.2.0-weekly.20260902.01/cann-9.2.0/x86_64-linux/simulator/bin/libcannsim_helper.so
+
+  cmd             /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel/sim
+  cwd             /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel
+  case symlink    /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel/case -> /tmp/megamoe_native_logging_case_20260908
+  CAMODEL_CONFIG_PATH -> /home/t00826093/Ascend/9.2.0-weekly.20260902.01/cann-9.2.0/python/site-packages/cannsim/core/record/ktest/templates/camodel_v100_2p.json (2p)
+
+[npusim 00:00.1] [user] » soc version: Ascend950PR
+[npusim 00:00.1] [user] » [camodel_config] Using config from env: /home/t00826093/Ascend/9.2.0-weekly.20260902.01/cann-9.2.0/python/site-packages/cannsim/core/record/ktest/templates/camo
+[npusim 00:00.1] [user] » [camodel_config] Alias: sysconf -> soc_mp.cfg
+[npusim 00:00.1] [user] » [camodel_config] Loaded config from: /home/t00826093/Ascend/9.2.0-weekly.20260902.01/cann-9.2.0/python/site-packages/cannsim/core/record/ktest/templates/camodel
+[npusim 00:00.1] [user] » [camodel_config] Override number_of_chip = 2 (in soc_mp.cfg)
+[npusim 00:00.1] [user] » [camodel_config] Override chip_type = {2, 0} (in soc_mp.cfg)
+[npusim 00:00.1] [user] » [camodel_config] Override esl_top_thread_cnt = 17 (in soc_mp.cfg)
+[npusim 00:00.1] [user] » [camodel_config] Override global_port_link_file = ./parameter/p2p_link_table.csv (in soc_mp.cfg)
+[npusim 00:00.1] [user] » [camodel_config] Override global_route_table_file = ./parameter/p2p_route_table_4jetty.csv (in soc_mp.cfg)
+[npusim 00:00.1] [user] » [camodel_config] Override ub_memory_en = true (in soc_mp.cfg)
+[npusim 00:00.1] [phase] phase → driver init
+[npusim 00:04.8] [phase] phase → loading model files
+[npusim 00:04.8] [info] ddr: lpddr5 1900 Mbps, 1 Channels, 1 Ranks, Gbuf false, IECC false
+[npusim 00:06.5] [user] » Assertion failed: core_wrapper.cpp:267 init_new_core_cfg
+[npusim 00:06.5] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:06.5] [user] » Config file: /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_config.toml
+[npusim 00:07.0] [phase] phase → core init (die 0)
+[npusim 00:07.1] [phase] phase → stars scheduler config
+[npusim 00:07.1] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.1] [user] » [camodel_config] Override number_of_chip = 2 (in soc_mp.cfg)
+[npusim 00:07.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.3] [phase] phase → core build (die 0)
+[npusim 00:07.3] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.3] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.4] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.5] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.6] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.7] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.8] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.9] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:07.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:07.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.0] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.1] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.2] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.3] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.4] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.5] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.6] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:08.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:08.8] [phase] phase → smmu page build
+[npusim 00:08.9] [info] smmu page build done
+[npusim 00:13.3] [phase] phase → sim start
+[npusim 00:13.3] [info] die 0 created
+[npusim 00:20.7] [warn] Warning: top.json missing case_path or sq_file for chip0.die1
+[npusim 00:20.7] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:20.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.8] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:20.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.9] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:20.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:20.9] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:20.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.0] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.1] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.2] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.3] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.4] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.5] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.6] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.7] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.8] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.9] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:21.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:21.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.0] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:22.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.1] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:22.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:22.3] [info] smmu page build done
+[npusim 00:26.8] [info] die 1 created
+[npusim 00:27.9] [info] die 2 created
+[npusim 00:29.1] [info] die 3 created
+[npusim 00:29.1] [phase] phase → SoC ready, awaiting tasks
+[npusim 00:30.0] [heartbeat] signal=alive + recent logs phase=soc_ready pgid=1316531 processes=1 threads=67 cpu_cores=1.0 resident=6.55G log_lines=364
+[npusim 00:38.3] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.4] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.5] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.6] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.7] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.7] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.8] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.8] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.9] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:38.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:38.9] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.0] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.0] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.1] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.1] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.2] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.2] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.3] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.3] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.4] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.4] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.5] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.5] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.6] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.6] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.7] [user] » [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+[npusim 00:39.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.7] [user] » [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+[npusim 00:39.9] [info] smmu page build done
+[2026-09-09 03:05:39] [ERROR] USER_APP interrupted after 43.99s
+[2026-09-09 03:05:39] [INFO] Cleaned up log from /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel
+[2026-09-09 03:05:39] [INFO] Cleaned up log_ca from /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel
+[2026-09-09 03:05:39] [INFO] Cleaned up run_log from /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/toolkit/tools/simulator/dav_3510/camodel
+────────────────────────────────────────────────────────────────────────
+Simulation INTERRUPTED  ·  run time 44.0s  ·  signal 15
+
+Artifacts
+  archive   /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/output/npusim_20260908200455_case
+  log       /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/run_UdItTK/output/npusim_20260908200455_case/npusim.log
+
+Warnings (1 unique / 1 total)
+  x1    Warning: top.json missing case_path or sq_file for chip0.die1
+
+Captured progress
+  phase     soc_ready
+  events    223
+  - [user] [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_
+  - [user] [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+  - [user] [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+  - [user] [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+  - [info] smmu page build done
+
+Last log lines
+  [CORE_WRAPPER] [INFO] [0000000000]        build (165):: CoreWrapper [DvcCore46] build, esl_idx=48, log_path=./log_ca
+  [TmSim]: Top module clk47 is assigned to thread 47
+  [error] Config file is not in hard_code_toml_cfg_map. filename=/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_logging/core_config.toml
+  [TmSim]: Top module core47 is assigned to thread 47
+  [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+  [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+  [error] cfg find path DCACHE.dc_stack_core_offset is unqualified.
+  [CORE_WRAPPER] [INFO] [0000000000]        build (165):: CoreWrapper [DvcCore47] build, esl_idx=49, log_path=./log_ca
+  Start to build SMMU Page !
+  SMMU Page build finished!
+────────────────────────────────────────────────────────────────────────
