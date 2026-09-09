@@ -1,0 +1,84 @@
+{
+  "wait": {
+    "raw_id": 55005,
+    "db_row": {
+      "ExecInstrId": 61022895396573,
+      "SourceInstrAddr": 1070348,
+      "ExecInstrTickStart": 45985,
+      "ExecInstrTickEnd": 45986,
+      "ExecInstrName": "WAIT_FLAG",
+      "ExecInstrParams": "",
+      "InstrTypeId": 55,
+      "ExecInstrCoreId": 0,
+      "CoreTypeId": 2,
+      "ExtendParams": "{\"core_type\":\"AIV0\",\"instr_type\":\"PUSHQ\",\"is_duration_excluded\":1,\"is_sync\":1,\"is_wait\":1,\"policy_version\":\"7\",\"queue_type\":\"SIMD\",\"vf_class\":\"NONE\",\"vf_simt_class\":\"NONE\",\"consumer_pipe\":\"VEC\",\"flag_id\":0,\"sync_kind\":\"WAIT_FLAG\",\"target_pipe\":\"MTE3\"}",
+      "SourceInstrEncoding": "0x15d12800",
+      "ExecInstrIsWait": 1,
+      "ExecInstrIsSynchronization": 1,
+      "ExecInstrIsDurationExcluded": 1,
+      "ExecInstrVfClass": null,
+      "ExecInstrVfSimtClass": null
+    },
+    "raw_events": [
+      {
+        "tick": 31577,
+        "core": 0,
+        "sub": 1,
+        "pc": "0x4010550c",
+        "kind": 1,
+        "decode": "(PC: 0x4010550c) VEC      : (Binary: 0x15d12800) (ID: 055005) WAIT_FLAG",
+        "params": "PIPE:MTE3, TRIGGER PIPE:VEC, FLAG ID:0, #V:0, "
+      },
+      {
+        "tick": 45986,
+        "core": 0,
+        "sub": 1,
+        "pc": "0x4010550c",
+        "kind": 0,
+        "decode": "(PC: 0x4010550c) VEC      : (Binary: 0x15d12800) (ID: 055005) WAIT_FLAG",
+        "params": "PIPE:MTE3, TRIGGER PIPE:VEC, FLAG ID:0, #V:0, "
+      }
+    ]
+  },
+  "duplicate": {
+    "raw_id": 14046,
+    "db_row": {
+      "ExecInstrId": 57999238379230,
+      "SourceInstrAddr": 1093640,
+      "ExecInstrTickStart": 15354,
+      "ExecInstrTickEnd": 15354,
+      "ExecInstrName": "RV_SMOV",
+      "ExecInstrParams": "",
+      "InstrTypeId": 52,
+      "ExecInstrCoreId": 0,
+      "CoreTypeId": 3,
+      "ExtendParams": "{\"core_type\":\"AIV1\",\"instr_type\":\"RVECSU\",\"is_duration_excluded\":0,\"is_sync\":0,\"is_wait\":0,\"policy_version\":\"7\",\"queue_type\":\"SIMD\",\"vf_class\":\"SCALAR\",\"vf_simt_class\":\"NONE\"}",
+      "SourceInstrEncoding": "0xc218004d",
+      "ExecInstrIsWait": 0,
+      "ExecInstrIsSynchronization": 0,
+      "ExecInstrIsDurationExcluded": 0,
+      "ExecInstrVfClass": 1,
+      "ExecInstrVfSimtClass": null
+    },
+    "raw_events": [
+      {
+        "tick": 15357,
+        "core": 0,
+        "sub": 2,
+        "pc": "0x4010b008",
+        "kind": 1,
+        "decode": "(PC: 0x4010b008) RVECSU   : (Binary: 0xc218004d) (ID: 014046) RV_SMOV",
+        "params": ""
+      },
+      {
+        "tick": 15358,
+        "core": 0,
+        "sub": 2,
+        "pc": "0x4010b008",
+        "kind": 0,
+        "decode": "(PC: 0x4010b008) RVECSU   : (Binary: 0xc218004d) (ID: 014046) RV_SMOV",
+        "params": ""
+      }
+    ]
+  }
+}
