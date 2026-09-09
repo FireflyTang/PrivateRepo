@@ -16,4 +16,4 @@ run_case.sh 依赖已经加载的 ASCEND_HOME_PATH 和 npusim，在新目录复�
 
 已知实例：MegaMoE BS16/H1024/hidden512/topK1，每卡一个专家，非零 BF16 输入和非零稀疏 FP8 E5M2 权重，跨卡路由及不同路由权重；每卡 16384 BF16 输出逐位正确。Dispatch BS8/H7168/topK8，总8专家，每卡64个量化输出行，INT8值、FP32 scales、路由、分组及计数通过。
 
-数值结果通过后，把新 capture 目录传给原生 report。不因打包或重新看流水重复运行五分钟仿真。
+数值结果通过后，默认把新 capture/record/chipN_instr.bin 传给 scripts/export_msprof.py，由原生 msprof 生成 Insight 报告，具体见 insight.md。用户选择 Perfetto 时才把 capture 目录传给 npusim report，见 native-report.md。不因打包或重新看流水重复运行五分钟仿真。
