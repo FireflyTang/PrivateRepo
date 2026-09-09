@@ -1,6 +1,6 @@
-# 可选的原生 msprof / Insight 路线
+# 默认的原生 msprof / Insight 路线
 
-保留已有结果，用户没有要求时不要用它替换默认 Perfetto 路线。
+默认使用本路线。已有合适的 Insight 报告时直接交付；需要重新导出时使用新输出目录，保留原始采集。不要再用旧的手工 JSON 适配器，也不要先修复 helper DB。
 
 本机 msprof op simulator --export 只识别文本 dump，不能直接吃 instr.bin。脚本 export_msprof.py 原样还原模型文本，随后调用安装的 msprof；不生成/修饰 trace JSON：
 
@@ -12,7 +12,7 @@ python3 SKILL_DIR/scripts/export_msprof.py ARCHIVE/record/chip0_instr.bin --core
 
 原生参数 `--aic-metrics=PipeUtilization,ResourceConflictRatio` 启用管线与同步详情，单独PipeUtilization会关闭同步详情。注意返回0不一定成功，要检查实际trace与导出日志。
 
-二进制结构<QIIQB200s200s7x，kind=1对应popped/start，kind=0对应完成。原生模型文本中decode与参数之间是两个空格；参考仓的Python decoder使用一空格，本机msprof会静默丢detail。用脚本后应确认Flag的detail非空，并可用validate_msprof_raw_flags.py核对原始起止和关系。
+二进制结构 `<QIIQB200s200s7x`，kind=1对应popped/start，kind=0对应完成。原生模型文本中decode与参数之间是两个空格；参考仓的Python decoder使用一空格，本机msprof会静默丢detail。用脚本后应确认Flag的detail非空，并可用validate_msprof_raw_flags.py核对原始起止和关系。
 
 没有重新实现配色或等待时长。msprof会按自身规则裁剪WAIT，与原始popped区间不一定完全相同。本路线不补齐原始流缺少的多阶段事件，也不提供没有采集的I-cache/MTE数据或缺失的源码映射。
 
