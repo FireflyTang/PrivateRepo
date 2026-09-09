@@ -1,0 +1,15 @@
+{
+  "command": [
+    "msprof",
+    "op",
+    "simulator",
+    "--export",
+    "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_export_probe/raw_chip0",
+    "--output",
+    "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/native_export_probe/output",
+    "--soc-version=Ascend950PR_9589",
+    "--core-id=0",
+    "--aic-metrics=PipeUtilization,ResourceConflictRatio"
+  ],
+  "returncode": 0
+}
