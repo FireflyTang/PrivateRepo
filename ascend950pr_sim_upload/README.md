@@ -1,8 +1,8 @@
-# 950PR 双卡仿真归档与开发者讨论材料
+# 950PR 双卡仿真材料
 
-- **长期归档**：[ascend950pr_sim_bundle.tar.gz](ascend950pr_sim_bundle.tar.gz)。包含最终非平凡 Dispatch/MegaMoE 用例、实际输出和 golden、原始采集、原生 msprof 报告、脚本、历史问题及校验文件。解压后从 README.md 开始。
-- **开发者讨论**：[developer_discussion/README.md](developer_discussion/README.md)。可以先发这个入口，按问题定位日志和统计，不必先下载整个归档。
+- [Perfetto 原生流水](perfetto_megamoe/README.md)：刚重新导出的 MegaMoE 两卡全部实际核，JSON 未修改。
+- [开发者讨论入口](developer_discussion/README.md)：[helper 两个问题的可读版说明](developer_discussion/docs/HELPER_TWO_ISSUES.md)，有具体例子和需要确认的问题。
+- [可复用技能](ascend950pr-multichip-sim/SKILL.md)：默认原生 npusim/Perfetto，可选 Insight。可下载 [skill ZIP](ascend950pr-multichip-sim.zip) 解压到 ~/.codex/skills。
+- 完整非平凡用例、原始采集及历史结果已在本地 ascend950pr_sim_bundle 归档。整包此前上传遇到 GitHub 规则校验超时，云盘暂未提供，不要把入口文件已上传误认为整包已上传。
 
-当前结论是执行与数值验证已通过，报告改用原生 msprof；二进制转文本仍需小脚本。希望开发者确认官方原生导出入口及 helper 同步事件语义，没有把整条运行逻辑判为错误。
-
-SHA256SUMS 可校验本目录全部文件。完整归档内部还有独立 SHA256SUMS 与 verify_bundle.py。
+默认先用 Perfetto，helper 相关问题先交开发者确认；Insight 路线保留。SHA256SUMS 同时包含本地完整归档及本次上传材料的校验值，完整归档缺失属于已知上传限制。
