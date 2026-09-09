@@ -1,0 +1,36 @@
+
+███╗   ██╗██████╗ ██╗   ██╗    ███████╗██╗███╗   ███╗    
+████╗  ██║██╔══██╗██║   ██║    ██╔════╝██║████╗ ████║    
+██╔██╗ ██║██████╔╝██║   ██║    ███████╗██║██╔████╔██║    
+██║╚██╗██║██╔═══╝ ██║   ██║    ╚════██║██║██║╚██╔╝██║    
+██║ ╚████║██║     ╚██████╔╝    ███████║██║██║ ╚═╝ ██║    
+╚═╝  ╚═══╝╚═╝      ╚═════╝     ╚══════╝╚═╝╚═╝     ╚═╝    
+                                                        
+    Join the conversation and help shape the future.
+    └─ https://gitcode.com/org/cann/discussions/50
+
+Notice: The cannsim command has been renamed to npusim and will be deprecated soon.
+Please use npusim instead.
+
+[2026-09-09 03:34:35] [INFO] Detected multi-card analysis mode.
+[2026-09-09 03:34:35] [INFO] Found chip instruction logs: chip0_instr.bin, chip1_instr.bin
+[2026-09-09 03:34:35] [INFO] Generating report for chip0_instr.bin with helper DB chip0.db -> /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/megamoe/pipeline/npusim_native_system_sqlite/chip0_result
+[2026-09-09 03:34:35] [INFO] Generating performance report...
+[2026-09-09 03:34:35] [INFO] Found cannsim_helper DB input: /tmp/chip0_instr_zlvsdvo7
+[2026-09-09 03:34:36] [INFO] Running ProfRunner module...
+[2026-09-09 03:34:36] [INFO] Processing 1 cannsim_helper DB file(s).
+[2026-09-09 03:34:51] [INFO] Report generation completed successfully.
+[2026-09-09 03:34:51] [INFO] Reorganized reports by core in 0000_kernel_reports: core_0 (1 files), core_1 (1 files)
+[2026-09-09 03:34:51] [INFO] Generating aggregated index.html...
+[2026-09-09 03:34:51] [WARN] No *_reports/ directories found in /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/megamoe/pipeline/npusim_native_system_sqlite/chip0_result
+[2026-09-09 03:34:51] [INFO] Aggregated index.html generation had warnings.
+[2026-09-09 03:34:51] [INFO] Generating report for chip1_instr.bin with helper DB chip1.db -> /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/megamoe/pipeline/npusim_native_system_sqlite/chip1_result
+[2026-09-09 03:34:51] [INFO] Generating performance report...
+[2026-09-09 03:34:51] [INFO] Found cannsim_helper DB input: /tmp/chip1_instr_727uyhfz
+[2026-09-09 03:34:51] [INFO] Running ProfRunner module...
+[2026-09-09 03:34:51] [INFO] Processing 1 cannsim_helper DB file(s).
+[2026-09-09 03:35:07] [INFO] Report generation completed successfully.
+[2026-09-09 03:35:07] [INFO] Reorganized reports by core in 0000_kernel_reports: core_0 (1 files), core_1 (1 files)
+[2026-09-09 03:35:07] [INFO] Generating aggregated index.html...
+[2026-09-09 03:35:07] [WARN] No *_reports/ directories found in /home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/megamoe/pipeline/npusim_native_system_sqlite/chip1_result
+[2026-09-09 03:35:07] [INFO] Aggregated index.html generation had warnings.
