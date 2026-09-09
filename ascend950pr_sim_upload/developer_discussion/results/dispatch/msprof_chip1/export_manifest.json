@@ -1,0 +1,26 @@
+{
+  "raw_file": "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/results/dispatch/capture/record/chip1_instr.bin",
+  "raw_sha256": "8bdc3d59f0929224767880944503acb78ec995e765fce62985ac4dbff0bcccce",
+  "records_by_file": {
+    "core0.veccore0.instr_popped_log.dump": 6426,
+    "core0.veccore0.instr_log.dump": 6434,
+    "core0.veccore1.instr_popped_log.dump": 6310,
+    "core0.veccore1.instr_log.dump": 6320
+  },
+  "command": [
+    "msprof",
+    "op",
+    "simulator",
+    "--export",
+    "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/msprof_dispatch_chip1/dump",
+    "--output",
+    "/home/t00826093/sources/ops-transformer/examples/ascend950pr_sim_bundle/work/msprof_dispatch_chip1/output",
+    "--soc-version=Ascend950PR_9589",
+    "--aic-metrics=PipeUtilization,ResourceConflictRatio",
+    "--core-id=0"
+  ],
+  "returncode": 0,
+  "reports": [
+    "output/OPPROF_20260908200855_WCGHSEXWIOSKCZFT/simulator/trace.json"
+  ]
+}
