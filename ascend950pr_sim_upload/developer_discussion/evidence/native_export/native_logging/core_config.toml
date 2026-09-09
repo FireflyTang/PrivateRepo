@@ -1,0 +1,6 @@
+[LOG]
+file_print_level = 2
+screen_print_level = 6
+flush_level = 2
+enable_list = ["instr_log", "instr_popped_log"]
+core_enable_mask = ["0x3"]
