@@ -1,5 +1,7 @@
 # 已解决问题与遗留问题
 
+关于 WAIT 只有 1 tick 和重复 ID 插入，请先读 [helper 两个现象的完整说明](HELPER_TWO_ISSUES.md)：包含数据来源、具体记录、影响及需要确认的设计语义。
+
 ## 数值结果
 
 最终验证文件位于 `../results/{megamoe,dispatch}/validation.json`，输入、输出、golden 均在相应 case 中。
