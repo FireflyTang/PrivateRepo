@@ -1,0 +1,67 @@
+{
+  "output_name": "ascend950pr_sim_bundle.tar.gz",
+  "bytes": 96510848,
+  "sha256": "402283c2fbca8c1663581571eb2ee5515f4677681f4a5367087722cc1a0a86b2",
+  "parts": [
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part000",
+      "bytes": 8388608,
+      "sha256": "77ca90ceaef3a49b95ef11e70acecca299ec30aa5aeb918d79bc7455c330b298"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part001",
+      "bytes": 8388608,
+      "sha256": "dce7068be854a6092b55aec5decd2c666ea548f801116ebc1d9b91b869d96070"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part002",
+      "bytes": 8388608,
+      "sha256": "af2e51ce74c2d7509d62a21c687ecde05a276402f83eb0dd5a5029ff771893f0"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part003",
+      "bytes": 8388608,
+      "sha256": "2a1eff8106a053833c37a590305fa5375f644c39eb8cae0d873c4bd79ea60c03"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part004",
+      "bytes": 8388608,
+      "sha256": "172f1911bd51704347abb6ea299c1213df347d5db8774efa19019a6d6c441e08"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part005",
+      "bytes": 8388608,
+      "sha256": "b575b6605d2e22e2a965e604e2e29db477adf1c1bf43f7acb488298dad18ca53"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part006",
+      "bytes": 8388608,
+      "sha256": "13c98c27c9e22eb818838d8c31432e478aad37556b7e5e0ba04dce6c5c1d1085"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part007",
+      "bytes": 8388608,
+      "sha256": "8c90979a1a61d3c28b7dbe35ccf5cf174c70fc0dc0befdf09cc2de53b965703a"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part008",
+      "bytes": 8388608,
+      "sha256": "832ce12585c865bb15dacde1e5984b514f2dd3c4a915c6a25e19125f7cd5a977"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part009",
+      "bytes": 8388608,
+      "sha256": "b190efedd86b6200538a01a9b134297f58b34867d55e0b31ededba383c0ca27b"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part010",
+      "bytes": 8388608,
+      "sha256": "e205d8780407707113fad95d4fd6379cb93c1ffa99a016ba7a5a53287ed690d5"
+    },
+    {
+      "name": "ascend950pr_sim_bundle.tar.gz.part011",
+      "bytes": 4236160,
+      "sha256": "79df6f28f181b5819d8e4afd736648d9699846ae3b7ca1959e3ec56a5ffab542"
+    }
+  ]
+}
