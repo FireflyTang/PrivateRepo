@@ -1,18 +1,18 @@
 ---
 name: ascend950pr-multichip-sim
-description: 在 Ascend 950PR 上准备、执行和验证 npusim record -c 多卡离线仿真，默认用原生 npusim report 导出 Perfetto 流水，并保留可选的 msprof/Insight 路线。适用于 Dispatch、MegaMoE 等完整 task case 的复现或开发；本流程实测双卡，不等同于普通单卡 host app 仿真或真机 profiling。
+description: 在 Ascend 950PR 上准备、执行和验证 npusim record -c 多卡离线仿真，默认还原原始指令文本并用原生 msprof 导出 Insight 流水，保留 npusim report/Perfetto 作为备用。适用于 Dispatch、MegaMoE 等完整 task case 的复现或开发；本流程实测双卡，不等同于普通单卡 host app 仿真或真机 profiling。
 ---
 
 # 950PR 多卡离线仿真
 
-优先完成用户当前想看的原生结果。默认入口是 `npusim record -c CASE`，报告是 `npusim report -e ARCHIVE -n all`，用 Perfetto 查看。用户已经有成功采集时，直接导出，不重跑 kernel。Insight 路线只有用户需要时才使用，已有结果保留。
+默认采集入口是 `npusim record -c CASE`；默认报告路径为原始 `chipN_instr.bin` → 模型文本 `.dump` → 原生 `msprof op simulator --export` → MindStudio Insight。使用随技能提供的 `export_msprof.py` 还原文本并调用 msprof，不自行生成或修改流水 JSON。该路径不使用 helper 数据库，不需要为它加载 SQLite 兼容库。已有成功采集时直接导出，不重跑 kernel；已有符合需求的 Insight 报告可直接交付。用户明确选择 Perfetto 时再使用备用路径。
 
 ## 选择起点
 
-- **已有采集，只要流水**：读 [原生导出](references/native-report.md)，运行安装版本的 report；检查实际 JSON 文件，原样交付。不要自行改颜色、管线名称、同步时长或连线。
+- **已有采集，只要流水**：读 [默认 Insight 导出](references/insight.md)，用 `scripts/export_msprof.py` 调用安装的 msprof；检查实际汇总 JSON 文件，原样交付。不要自行改颜色、管线名称、同步时长或连线。
 - **已有完整 case，需要运行或复现**：读 [执行与数值验证](references/run-and-validate.md)。先复制到新工作目录并重定位 top.json，防止误读上次输出或覆盖证据。
 - **只有 kernel，需要准备多卡 case**：读 [case 构造](references/case-construction.md)。kernel 镜像必须配合参数、tiling、通信 context、拓扑和任务队列；top.json 本身不是调用壳。
-- **用户需要 Insight**：读 [可选 Insight 路径](references/insight.md)，优先调用原生 msprof。不要把旧手工 JSON 适配器当作默认方案。
+- **用户选择 Perfetto 或需要对照 npusim 原生报告**：读 [备用 Perfetto 路径](references/native-report.md)，使用原生 `npusim report`；保留已有 Insight 结果。
 
 ## 已验证的范围
 
