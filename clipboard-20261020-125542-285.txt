@@ -1,0 +1,2 @@
+“启动额外开销”是什么？Dispatch 先准备输入，首批 routed GMM1（路由专家的第一层矩阵计算）才能启动。这里统计的是：同时开启 Dispatch 去重后，这批计算比仅开启 Combine 去重时晚开始了多少。不是整个 Dispatch 的耗时，也不是新增一次 Prepass；两方案都有 Prepass。
+
