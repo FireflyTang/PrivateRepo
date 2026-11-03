@@ -1,0 +1,8 @@
+我们使用CANN 9.2.0 / V100R001C12B096（weekly20260902.01），在npusim运行950PR、4P MegaMoE。
+
+原case约2 GiB的workspace覆盖了固定SQ/CQ/swap地址。将动态数据移到独立高地址区、保持固定运行时地址不动后，模型访问tiling.bin时触发`TDaw.cpp:1206 getTgtEntry()` dynamic-window miss；失败地址为`0xa0817a0000`及rank1的`0x1a0817a0000`。四rank均有TASK_BEGIN，无TASK_DONE，退出码1。
+
+请帮忙确认：
+1. 合法GM地址范围及各rank地址偏移规则；
+2. SQ/CQ/swap、HBM args、stack的保留范围；
+3. 大workspace应如何分配，哪些地址允许通过case调整。
